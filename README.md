@@ -9,7 +9,10 @@ During the practical exercise, we used the simulated static site to analyze netw
 2. **Log Analysis & Filtering (Level 1):** By cross-referencing the "Traffic Analyser" with the "IDS/IPS System" logs, we pinpointed the exact sources of the attack:
    - **IP `10.10.99.99`**: Flagged for "Multiple Login Attempts" and "Metasploit Traffic".
    - **IP `10.10.99.62`**: Flagged for "Bad Traffic".
-<Drag and drop the logs photo image_420ed7.png here>
+<img width="673" height="678" alt="image" src="https://github.com/user-attachments/assets/110a8f14-e403-4c2e-a8ad-11e282e86ccf" />
+<img width="670" height="693" alt="image" src="https://github.com/user-attachments/assets/427c9d42-49ed-4bd9-833c-dc42a9011564" />
+
+
 
    We entered these two malicious IP addresses into the IDS/IPS System Filter Table. This action successfully blocked the malicious packets and restored the network, granting us the first flag.
 <Drag and drop the filter photo image_420b79.png here>

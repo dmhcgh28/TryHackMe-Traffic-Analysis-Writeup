@@ -77,8 +77,9 @@ To apply these concepts, a static simulation was provided to restore a compromis
 ### Final Flags:
 * **Level-1 Flag:** `THM{PACKET_MASTER}`
 * **Level-2 Flag:** `THM{DETECTION_MASTER}`
+<img width="668" height="401" alt="image" src="https://github.com/user-attachments/assets/ee7f1bb8-74ac-4f8a-8ad1-00d7113906bd" />
 
+### Task 4 **Conclusion**
    By adding these specific ports to the IDS/IPS filter, we effectively blocked the malicious traffic regardless of the source IP, demonstrating a more robust defense mechanism and earning the second flag.
-<Drag and drop image_41b51b.png here>
-<Drag and drop image_41b504.png here>
-<Drag and drop image_41b502.png here>
+
+<img width="1047" height="367" alt="image" src="https://github.com/user-attachments/assets/d8e3c419-b85a-45bb-ab50-54968bbf9752" />

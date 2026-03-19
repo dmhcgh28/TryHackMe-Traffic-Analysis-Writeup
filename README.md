@@ -93,7 +93,7 @@ Understanding how to correlate raw network events with an IDS/IPS system is a fu
 
 <img width="1047" height="367" alt="image" src="https://github.com/user-attachments/assets/d8e3c419-b85a-45bb-ab50-54968bbf9752" />
 
-***Well, well**
+**Well, well**
 
 **That's all**
 

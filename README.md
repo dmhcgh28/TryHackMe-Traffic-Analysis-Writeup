@@ -7,7 +7,7 @@ During the practical exercise, we used the simulated static site to analyze netw
 
 
 ### Task 2 Answers & Explanations:
-
+<img width="673" height="678" alt="image" src="https://github.com/user-attachments/assets/110a8f14-e403-4c2e-a8ad-11e282e86ccf" />
 * **Which Security Control Level covers contain creating security policies?**
     * **Answer:** `Administrative`
     * **Explanation:** Security controls are generally categorized into three levels: Physical, Technical (or Logical), and Administrative. While physical controls deal with locks and technical controls deal with software/firewalls, Administrative controls focus on the human and organizational element. This includes drafting security policies, compliance regulations, and employee training guidelines.
@@ -19,7 +19,6 @@ During the practical exercise, we used the simulated static site to analyze netw
 * **Which technology helps correlate different tool outputs and data sources?**
     * **Answer:** `SOAR`
     * **Explanation:** SOAR stands for **Security Orchestration, Automation, and Response**. In a modern Security Operations Center (SOC), analysts use dozens of different tools (firewalls, EDRs, SIEMs, etc.) that generate thousands of alerts. SOAR technologies are designed to integrate (orchestrate) all these disparate tools, automatically correlate their data outputs to filter out false positives, and execute automated response playbooks to contain threats faster.
-<img width="673" height="678" alt="image" src="https://github.com/user-attachments/assets/110a8f14-e403-4c2e-a8ad-11e282e86ccf" />
 <img width="670" height="693" alt="image" src="https://github.com/user-attachments/assets/427c9d42-49ed-4bd9-833c-dc42a9011564" />
 
 

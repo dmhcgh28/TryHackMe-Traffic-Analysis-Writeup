@@ -28,10 +28,45 @@ During the practical exercise, we used the simulated static site to analyze netw
 <Drag and drop the filter photo image_420b79.png here>
 <Drag and drop the first flag photo image_420b78.png here>
 
-3. **Port-Based Filtering (Level 2):** For the second level, the attack vector shifted. Instead of relying solely on IP addresses, we needed to identify malicious traffic based on the destination ports. By reviewing the traffic logs again, we noticed suspicious connections to specific ports on the target server (`10.10.99.199`):
-   - Port **`4444`** (often associated with Metasploit reverse shells).
-   - Port **`7777`**.
-   - Port **`2222`**.
+
+3. **Port-Based Filtering**
+This task delved into Network Traffic Analysis (NTA), explaining how intercepting and monitoring network data is crucial for detecting anomalies. 
+
+<img width="1279" height="694" alt="image" src="https://github.com/user-attachments/assets/b5aa6498-26f9-4045-a0bf-42518d188790" />
+
+
+To apply these concepts, a static simulation was provided to restore a compromised network by analyzing logs and configuring an IDS/IPS filter.
+
+### Phase 1: Identifying Malicious IPs (Level 1)
+* **Observation:** The network animation showed red nodes indicating suspicious traffic targeting the main server (`10.10.99.199`).
+
+<img width="1362" height="683" alt="image" src="https://github.com/user-attachments/assets/31c8e02c-ff33-4a52-934b-c15221272d9e" />
+<img width="619" height="479" alt="image" src="https://github.com/user-attachments/assets/c55a2fac-02f0-4e4d-86c0-c181c67a17f7" />
+
+
+
+* **Log Analysis:** By cross-referencing the "Traffic Analyser" logs with the "IDS/IPS System" alerts, the exact sources of the attack were identified:
+  * **IP `10.10.99.99`**: Flagged for "Multiple Login Attempts" and "Metasploit Traffic".
+  * **IP `10.10.99.62`**: Flagged for "Bad Traffic".
+[ Drag and drop image_420ed7.png here ]
+
+* **Action & Result:** Adding these two IPs to the IDS/IPS Filter Table successfully blocked the malicious packets, restoring the network and yielding the first flag.
+[ Drag and drop image_420b79.png here ]
+[ Drag and drop image_420b78.png here ]
+
+### Phase 2: Port-Based Filtering (Level 2)
+* **Observation:** In the second level, the attacker shifted tactics. Instead of relying on specific IP addresses, the malicious traffic came from multiple sources.
+* **Log Analysis:** A deeper look at the logs revealed a pattern based on the *destination ports* on the target server (`10.10.99.199`):
+  * **Port `4444`**: Frequently associated with Metasploit reverse shells.
+  * **Port `7777`** and **Port `2222`**: Showing anomalous inbound connections.
+* **Action & Result:** Blocking IP addresses would be ineffective against spoofed or dynamic IPs. The correct mitigation strategy was to filter the traffic based on these specific ports. Adding ports 4444, 7777, and 2222 to the IDS/IPS filter neutralized the threat regardless of its origin, providing the second flag.
+[ Drag and drop image_41b51b.png here ]
+[ Drag and drop image_41b504.png here ]
+[ Drag and drop image_41b502.png here ]
+
+### Task 3 Final Flags:
+* **Level-1 Flag:** `THM{PACKET_MASTER}`
+* **Level-2 Flag:** `THM{DETECTION_MASTER}`
 
    By adding these specific ports to the IDS/IPS filter, we effectively blocked the malicious traffic regardless of the source IP, demonstrating a more robust defense mechanism and earning the second flag.
 <Drag and drop image_41b51b.png here>

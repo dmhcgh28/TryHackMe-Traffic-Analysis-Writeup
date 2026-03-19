@@ -6,9 +6,19 @@ During the practical exercise, we used the simulated static site to analyze netw
 <img width="675" height="426" alt="image" src="https://github.com/user-attachments/assets/b1deafc8-e272-49ad-a736-afbf2aa739ec" />
 
 
-2. **Log Analysis & Filtering (Level 1):** By cross-referencing the "Traffic Analyser" with the "IDS/IPS System" logs, we pinpointed the exact sources of the attack:
-   - **IP `10.10.99.99`**: Flagged for "Multiple Login Attempts" and "Metasploit Traffic".
-   - **IP `10.10.99.62`**: Flagged for "Bad Traffic".
+### Task 2 Answers & Explanations:
+
+* **Which Security Control Level covers contain creating security policies?**
+    * **Answer:** `Administrative`
+    * **Explanation:** Security controls are generally categorized into three levels: Physical, Technical (or Logical), and Administrative. While physical controls deal with locks and technical controls deal with software/firewalls, Administrative controls focus on the human and organizational element. This includes drafting security policies, compliance regulations, and employee training guidelines.
+
+* **Which Access Control element works with data metrics to manage data flow?**
+    * **Answer:** `Load Balancing`
+    * **Explanation:** Load balancers act as a traffic cop for network requests. They continuously monitor data metrics (such as server health, current active connections, or response times) to intelligently distribute incoming traffic across multiple servers. This prevents any single server from becoming a bottleneck, ensuring high availability and smooth data flow.
+
+* **Which technology helps correlate different tool outputs and data sources?**
+    * **Answer:** `SOAR`
+    * **Explanation:** SOAR stands for **Security Orchestration, Automation, and Response**. In a modern Security Operations Center (SOC), analysts use dozens of different tools (firewalls, EDRs, SIEMs, etc.) that generate thousands of alerts. SOAR technologies are designed to integrate (orchestrate) all these disparate tools, automatically correlate their data outputs to filter out false positives, and execute automated response playbooks to contain threats faster.
 <img width="673" height="678" alt="image" src="https://github.com/user-attachments/assets/110a8f14-e403-4c2e-a8ad-11e282e86ccf" />
 <img width="670" height="693" alt="image" src="https://github.com/user-attachments/assets/427c9d42-49ed-4bd9-833c-dc42a9011564" />
 

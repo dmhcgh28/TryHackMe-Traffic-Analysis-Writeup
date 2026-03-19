@@ -35,7 +35,7 @@ This task delved into Network Traffic Analysis (NTA), explaining how interceptin
 <img width="1279" height="694" alt="image" src="https://github.com/user-attachments/assets/b5aa6498-26f9-4045-a0bf-42518d188790" />
 
 
-   We entered these two malicious IP addresses into the IDS/IPS System Filter Table. This action successfully blocked the malicious packets and restored the network, granting us the first flag.
+
 
 
 To apply these concepts, a static simulation was provided to restore a compromised network by analyzing logs and configuring an IDS/IPS filter.
@@ -53,6 +53,8 @@ To apply these concepts, a static simulation was provided to restore a compromis
   * **IP `10.10.99.62`**: Flagged for "Bad Traffic".
 
 <img width="512" height="644" alt="image" src="https://github.com/user-attachments/assets/f67caaf2-0d64-4b6e-9df2-2b12bb0b0205" />
+
+   We entered these two malicious IP addresses into the IDS/IPS System Filter Table. This action successfully blocked the malicious packets and restored the network, granting us the first flag.
 
 
 * **Action & Result:** Adding these two IPs to the IDS/IPS Filter Table successfully blocked the malicious packets, restoring the network and yielding the first flag.

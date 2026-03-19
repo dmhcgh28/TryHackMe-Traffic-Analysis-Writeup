@@ -48,11 +48,15 @@ To apply these concepts, a static simulation was provided to restore a compromis
 * **Log Analysis:** By cross-referencing the "Traffic Analyser" logs with the "IDS/IPS System" alerts, the exact sources of the attack were identified:
   * **IP `10.10.99.99`**: Flagged for "Multiple Login Attempts" and "Metasploit Traffic".
   * **IP `10.10.99.62`**: Flagged for "Bad Traffic".
-[ Drag and drop image_420ed7.png here ]
+
+<img width="512" height="644" alt="image" src="https://github.com/user-attachments/assets/f67caaf2-0d64-4b6e-9df2-2b12bb0b0205" />
+
 
 * **Action & Result:** Adding these two IPs to the IDS/IPS Filter Table successfully blocked the malicious packets, restoring the network and yielding the first flag.
-[ Drag and drop image_420b79.png here ]
-[ Drag and drop image_420b78.png here ]
+<img width="478" height="385" alt="image" src="https://github.com/user-attachments/assets/81584835-4b21-49f1-8532-937ba403299a" />
+
+<img width="487" height="379" alt="image" src="https://github.com/user-attachments/assets/89e534c3-5b16-427f-b256-47b002d623a9" />
+
 
 ### Phase 2: Port-Based Filtering (Level 2)
 * **Observation:** In the second level, the attacker shifted tactics. Instead of relying on specific IP addresses, the malicious traffic came from multiple sources.

@@ -81,7 +81,18 @@ To apply these concepts, a static simulation was provided to restore a compromis
 * **Level-2 Flag:** `THM{DETECTION_MASTER}`
 <img width="668" height="401" alt="image" src="https://github.com/user-attachments/assets/ee7f1bb8-74ac-4f8a-8ad1-00d7113906bd" />
 
+By adding these specific ports to the IDS/IPS filter, we effectively blocked the malicious traffic regardless of the source IP, demonstrating a more robust defense mechanism and earning the second flag.
+
 ### Task 4 **Conclusion**
-   By adding these specific ports to the IDS/IPS filter, we effectively blocked the malicious traffic regardless of the source IP, demonstrating a more robust defense mechanism and earning the second flag.
+
+   The **Traffic Analysis Essentials** room provided a comprehensive introduction to the core pillars of network security operations. By bridging the gap between theoretical concepts—such as security control levels and MSS/SOAR technologies—and practical application, this module emphasized the critical role of Network Traffic Analysis (NTA) in a modern SOC (Security Operations Center) environment.
+
+The interactive simulation was particularly valuable for demonstrating the evolution of defense strategies. It highlighted the shift from basic Indicator of Compromise (IoC) blocking (such as filtering a specific IP address) to more resilient, behavior-based mitigation (such as filtering anomalous destination ports like 4444 or 2222). 
+
+Understanding how to correlate raw network events with an IDS/IPS system is a fundamental skill for identifying the root cause of an attack and implementing effective firewall rules. This room serves as a strong stepping stone for deeper dives into packet analysis, threat hunting, and advanced Blue Team operations.
 
 <img width="1047" height="367" alt="image" src="https://github.com/user-attachments/assets/d8e3c419-b85a-45bb-ab50-54968bbf9752" />
+
+***Well, well**
+**That's all**
+**Thanks, I hop you enjoy it! :)**

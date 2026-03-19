@@ -60,11 +60,13 @@ To apply these concepts, a static simulation was provided to restore a compromis
 
 ### Phase 2: Port-Based Filtering (Level 2)
 * **Observation:** In the second level, the attacker shifted tactics. Instead of relying on specific IP addresses, the malicious traffic came from multiple sources.
+
+<img width="467" height="660" alt="image" src="https://github.com/user-attachments/assets/cd25b74f-7b82-4d2b-ab71-4b56ef4da9bc" />
+
 * **Log Analysis:** A deeper look at the logs revealed a pattern based on the *destination ports* on the target server (`10.10.99.199`):
   * **Port `4444`**: Frequently associated with Metasploit reverse shells.
   * **Port `7777`** and **Port `2222`**: Showing anomalous inbound connections.
 * **Action & Result:** Blocking IP addresses would be ineffective against spoofed or dynamic IPs. The correct mitigation strategy was to filter the traffic based on these specific ports. Adding ports 4444, 7777, and 2222 to the IDS/IPS filter neutralized the threat regardless of its origin, providing the second flag.
-<img width="467" height="660" alt="image" src="https://github.com/user-attachments/assets/cd25b74f-7b82-4d2b-ab71-4b56ef4da9bc" />
 
 <img width="554" height="450" alt="image" src="https://github.com/user-attachments/assets/0e487447-592f-467e-a07e-47f78638cf06" />
 

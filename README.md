@@ -24,7 +24,7 @@ During the practical exercise, we used the simulated static site to analyze netw
 
 
 
-   We entered these two malicious IP addresses into the IDS/IPS System Filter Table. This action successfully blocked the malicious packets and restored the network, granting us the first flag.
+
 <Drag and drop the filter photo image_420b79.png here>
 <Drag and drop the first flag photo image_420b78.png here>
 
@@ -33,6 +33,9 @@ During the practical exercise, we used the simulated static site to analyze netw
 This task delved into Network Traffic Analysis (NTA), explaining how intercepting and monitoring network data is crucial for detecting anomalies. 
 
 <img width="1279" height="694" alt="image" src="https://github.com/user-attachments/assets/b5aa6498-26f9-4045-a0bf-42518d188790" />
+
+
+   We entered these two malicious IP addresses into the IDS/IPS System Filter Table. This action successfully blocked the malicious packets and restored the network, granting us the first flag.
 
 
 To apply these concepts, a static simulation was provided to restore a compromised network by analyzing logs and configuring an IDS/IPS filter.

@@ -64,9 +64,15 @@ To apply these concepts, a static simulation was provided to restore a compromis
   * **Port `4444`**: Frequently associated with Metasploit reverse shells.
   * **Port `7777`** and **Port `2222`**: Showing anomalous inbound connections.
 * **Action & Result:** Blocking IP addresses would be ineffective against spoofed or dynamic IPs. The correct mitigation strategy was to filter the traffic based on these specific ports. Adding ports 4444, 7777, and 2222 to the IDS/IPS filter neutralized the threat regardless of its origin, providing the second flag.
-[ Drag and drop image_41b51b.png here ]
-[ Drag and drop image_41b504.png here ]
-[ Drag and drop image_41b502.png here ]
+<img width="467" height="660" alt="image" src="https://github.com/user-attachments/assets/cd25b74f-7b82-4d2b-ab71-4b56ef4da9bc" />
+
+<img width="554" height="450" alt="image" src="https://github.com/user-attachments/assets/0e487447-592f-467e-a07e-47f78638cf06" />
+
+<img width="587" height="484" alt="image" src="https://github.com/user-attachments/assets/83a65151-1eee-4e1d-a2fb-efc0e0af30ab" />
+
+<img width="583" height="462" alt="image" src="https://github.com/user-attachments/assets/a4d1bba2-91d8-47a0-98e5-8a6eca485f66" />
+
+
 
 ### Final Flags:
 * **Level-1 Flag:** `THM{PACKET_MASTER}`

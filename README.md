@@ -90,7 +90,7 @@ By adding these specific ports to the IDS/IPS filter, we effectively blocked the
 
 ### Task 4 **Conclusion**
 
-As required for the complete documentation of this challenge, here is the executive summary answering the core methodology questions from a defensive (Blue Team) perspective:
+Now we have to answer the main questions asked as a blue team manager.
 
 **1. What vulnerability or misconfiguration was found?**
 The main issue was a permissive Firewall/IPS configuration lacking internal network segmentation. This misconfiguration allowed compromised internal machines to freely communicate with the main server (`10.10.99.199`) without restrictions, enabling brute-force attacks ("Multiple Login Attempts") and the execution of malicious payloads ("Metasploit Traffic").

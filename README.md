@@ -3,7 +3,8 @@
 During the practical exercise, we used the simulated static site to analyze network traffic and identify malicious activity.
 
 1. **Observation:** The network animation showed red nodes indicating suspicious traffic. Once the server was compromised, we were tasked with analyzing the logs to restore the network.
-<Drag and drop images image_420f1a.png, image_420f19.png, and image_420f18.png here>
+<img width="675" height="426" alt="image" src="https://github.com/user-attachments/assets/b1deafc8-e272-49ad-a736-afbf2aa739ec" />
+
 
 2. **Log Analysis & Filtering (Level 1):** By cross-referencing the "Traffic Analyser" with the "IDS/IPS System" logs, we pinpointed the exact sources of the attack:
    - **IP `10.10.99.99`**: Flagged for "Multiple Login Attempts" and "Metasploit Traffic".

@@ -85,11 +85,18 @@ By adding these specific ports to the IDS/IPS filter, we effectively blocked the
 
 ### Task 4 **Conclusion**
 
-   The **Traffic Analysis Essentials** room provided a comprehensive introduction to the core pillars of network security operations. By bridging the gap between theoretical concepts—such as security control levels and MSS/SOAR technologies—and practical application, this module emphasized the critical role of Network Traffic Analysis (NTA) in a modern SOC (Security Operations Center) environment.
+As required for the complete documentation of this challenge, here is the executive summary answering the core methodology questions from a defensive (Blue Team) perspective:
 
-The interactive simulation was particularly valuable for demonstrating the evolution of defense strategies. It highlighted the shift from basic Indicator of Compromise (IoC) blocking (such as filtering a specific IP address) to more resilient, behavior-based mitigation (such as filtering anomalous destination ports like 4444 or 2222). 
+**1. What vulnerability or misconfiguration was found?**
+The main issue was a permissive Firewall/IPS configuration lacking internal network segmentation. This misconfiguration allowed compromised internal machines to freely communicate with the main server (`10.10.99.199`) without restrictions, enabling brute-force attacks ("Multiple Login Attempts") and the execution of malicious payloads ("Metasploit Traffic").
 
-Understanding how to correlate raw network events with an IDS/IPS system is a fundamental skill for identifying the root cause of an attack and implementing effective firewall rules. This room serves as a strong stepping stone for deeper dives into packet analysis, threat hunting, and advanced Blue Team operations.
+**2. What tool did you use and why?**
+I used the simulated **Traffic Analyser** and the **IDS/IPS System** logs. I used them together to perform **Log Correlation**. The IDS/IPS provided the threat signatures (identifying *what* the attack was), while the Traffic Analyser provided the network telemetry (identifying *who* was attacking and through *which* ports). The IDS/IPS System Filter Table was then used to apply the blocking rules.
+
+**3. How did you gain access or find the hidden data? (Mitigation Process)**
+I found the "hidden" anomalous data by cross-referencing the logs in two phases to successfully mitigate the attack:
+* **Phase 1 (IP Mitigation):** I matched the IDS alerts with the traffic logs to uncover the exact source IPs (`10.10.99.99` and `10.10.99.62`) generating the attacks, and blocked them.
+* **Phase 2 (Port Mitigation):** When the attacker shifted tactics, I analyzed the destination vectors instead of the source IPs. I discovered anomalous connections targeting specific ports on the server (`4444` for Metasploit, `7777`, and `2222`). Blocking these specific ports completely neutralized the attacker's communication channel, regardless of the IP they used.
 
 <img width="1047" height="367" alt="image" src="https://github.com/user-attachments/assets/d8e3c419-b85a-45bb-ab50-54968bbf9752" />
 

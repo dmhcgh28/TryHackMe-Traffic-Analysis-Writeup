@@ -29,7 +29,7 @@ During the practical exercise, we used the simulated static site to analyze netw
 <Drag and drop the first flag photo image_420b78.png here>
 
 
-3. **Port-Based Filtering**
+### Task 3 **Port-Based Filtering** 
 This task delved into Network Traffic Analysis (NTA), explaining how intercepting and monitoring network data is crucial for detecting anomalies. 
 
 <img width="1279" height="694" alt="image" src="https://github.com/user-attachments/assets/b5aa6498-26f9-4045-a0bf-42518d188790" />
@@ -68,7 +68,7 @@ To apply these concepts, a static simulation was provided to restore a compromis
 [ Drag and drop image_41b504.png here ]
 [ Drag and drop image_41b502.png here ]
 
-### Task 3 Final Flags:
+### Final Flags:
 * **Level-1 Flag:** `THM{PACKET_MASTER}`
 * **Level-2 Flag:** `THM{DETECTION_MASTER}`
 

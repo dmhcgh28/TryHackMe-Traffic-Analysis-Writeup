@@ -8,6 +8,7 @@ During the practical exercise, we used the simulated static site to analyze netw
 
 ### Task 2 Answers & Explanations:
 <img width="673" height="678" alt="image" src="https://github.com/user-attachments/assets/110a8f14-e403-4c2e-a8ad-11e282e86ccf" />
+
 * **Which Security Control Level covers contain creating security policies?**
     * **Answer:** `Administrative`
     * **Explanation:** Security controls are generally categorized into three levels: Physical, Technical (or Logical), and Administrative. While physical controls deal with locks and technical controls deal with software/firewalls, Administrative controls focus on the human and organizational element. This includes drafting security policies, compliance regulations, and employee training guidelines.
